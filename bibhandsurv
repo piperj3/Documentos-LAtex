@@ -1,0 +1,1226 @@
+%grasping studies
+@inproceedings{lin2000modeling,
+  title={Modeling the constraints of human hand motion},
+  author={Lin, John and Wu, Ying and Huang, Thomas S},
+  booktitle={Human Motion, 2000. Proceedings. Workshop on},
+  pages={121--126},
+  year={2000},
+  organization={IEEE}
+  
+@article{santello1998gradual,
+  title={Gradual molding of the hand to object contours},
+  author={Santello, Marco and Soechting, John F},
+  journal={Journal of neurophysiology},
+  volume={79},
+  number={3},
+  pages={1307--1320},
+  year={1998},
+  publisher={Am Physiological Soc}
+}
+@article{jeannerod1995grasping,
+  title={Grasping objects: the cortical mechanisms of visuomotor transformation},
+  author={Jeannerod, Marc and Arbib, Michael A and Rizzolatti, Giacomo and Sakata, H},
+  journal={Trends in neurosciences},
+  volume={18},
+  number={7},
+  pages={314--320},
+  year={1995},
+  publisher={Elsevier}
+}
+
+@article{kamakura1980patterns,
+  title={Patterns of static prehension in normal hands},
+  author={Kamakura, Noriko and Matsuo, Michiko and Ishii, Harumi and Mitsuboshi, Fumiko and Miura, Yoriko},
+  journal={American Journal of Occupational Therapy},
+  volume={34},
+  number={7},
+  pages={437--445},
+  year={1980},
+  publisher={American Occupational Therapy Association}
+}
+
+@article{napier1956prehensile,
+  title={The prehensile movements of the human hand},
+  author={Napier, John R},
+  journal={Journal of bone and joint surgery},
+  volume={38},
+  number={4},
+  pages={902--913},
+  year={1956},
+  publisher={Ohm-sha}
+}
+
+@book{jones2006human,
+  title={Human hand function},
+  author={Jones, Lynette A and Lederman, Susan J},
+  year={2006},
+  publisher={Oxford University Press}
+}
+
+@article{taylor1955anatomy,
+  title={The anatomy and mechanics of the human hand},
+  author={Taylor, Craig L and Schwarz, Robert J},
+  journal={Artificial limbs},
+  volume={2},
+  number={2},
+  pages={22--35},
+  year={1955},
+  publisher={Hemisphere}
+}
+
+@article{iberall1987neural,
+  title={A neural model of human prehension},
+  author={Iberall, Althea R},
+  year={1987},
+  publisher={University of Massachusetts}
+}
+
+@incollection{schlesinger1919mechanische,
+  title={Der mechanische aufbau der k{\"u}nstlichen glieder},
+  author={Schlesinger, Ing G},
+  booktitle={Ersatzglieder und Arbeitshilfen},
+  pages={321--661},
+  year={1919},
+  publisher={Springer}
+}
+
+
+@inproceedings{bullock2011classifying,
+  title={Classifying human manipulation behavior},
+  author={Bullock, Ian M and Dollar, Aaron M},
+  booktitle={Rehabilitation Robotics (ICORR), 2011 IEEE International Conference on},
+  pages={1--6},
+  year={2011},
+  organization={IEEE}
+}
+
+@article{santello1998postural,
+  title={Postural hand synergies for tool use},
+  author={Santello, Marco and Flanders, Martha and Soechting, John F},
+  journal={The Journal of Neuroscience},
+  volume={18},
+  number={23},
+  pages={10105--10115},
+  year={1998},
+  publisher={Soc Neuroscience}
+}
+
+@article{mason2001hand,
+  title={Hand synergies during reach-to-grasp},
+  author={Mason, Carolyn R and Gomez, Jose E and Ebner, Timothy J},
+  journal={Journal of Neurophysiology},
+  volume={86},
+  number={6},
+  pages={2896--2910},
+  year={2001},
+  publisher={Am Physiological Soc}
+}
+
+@book{schmidt2011surgical,
+  title={Surgical anatomy of the hand},
+  author={Schmidt, Hans-Martin and Lanz, Ulrich},
+  year={2011},
+  publisher={Thieme}
+}
+@article{castiello2005neuroscience,
+  title={The neuroscience of grasping},
+  author={Castiello, Umberto},
+  journal={Nature Reviews Neuroscience},
+  volume={6},
+  number={9},
+  pages={726--736},
+  year={2005},
+  publisher={Nature Publishing Group}
+}
+
+@article{gibson1977theory,
+  title={The theory of affordances},
+  author={Gibson, James J},
+  journal={Hilldale, USA},
+  year={1977}
+}
+
+@article{cutkosky1989grasp,
+  title={On grasp choice, grasp models, and the design of hands for manufacturing tasks},
+  author={Cutkosky, Mark R},
+  journal={Robotics and Automation, IEEE Transactions on},
+  volume={5},
+  number={3},
+  pages={269--279},
+  year={1989},
+  publisher={IEEE}
+}
+@inproceedings{feix2009comprehensive,
+  title={A comprehensive grasp taxonomy},
+  author={Feix, Thomas and Pawlik, Roland and Schmiedmayer, Heinz-Bodo and Romero, Javier and Kragic, Danica},
+  booktitle={Robotics, Science and Systems: Workshop on Understanding the Human Hand for Advancing Robotic Manipulation},
+  pages={2--3},
+  year={2009}
+}
+
+
+%manufacturing industry applications
+@article{cutkosky1989grasp,
+  title={On grasp choice, grasp models, and the design of hands for manufacturing tasks},
+  author={Cutkosky, Mark R},
+  journal={Robotics and Automation, IEEE Transactions on},
+  volume={5},
+  number={3},
+  pages={269--279},
+  year={1989},
+  publisher={IEEE}
+}
+@inproceedings{falco2013dexterous,
+ title={Dexterous Manipulation for Manufacturing Applications Workshop},
+ author={Falco Joe, MArvel Jeremy, Messina Elena},
+ year={2013},
+ publisher={National Institute of Standards and Technology, U.S. Department of Commerce}
+}
+%domestic environments
+@article{kemp2007challenges,
+  title={Challenges for robot manipulation in human environments},
+  author={Kemp, Charles C and Edsinger, Aaron and Torres-Jara, Eduardo},
+  journal={IEEE Robotics and Automation Magazine},
+  volume={14},
+  number={1},
+  pages={20},
+  year={2007},
+  publisher={THE IEEE, INC.}
+}
+
+%hazardous environments
+@inproceedings{jongkind1993dextrous,
+  title={Dextrous gripping in a hazardous environment: guidelines, fault tolerance and control},
+  author={Jongkind, Willem},
+  booktitle={Systems, Man and Cybernetics, 1993.'Systems Engineering in the Service of Humans', Conference Proceedings., International Conference on},
+  pages={509--514},
+  year={1993},
+  organization={IEEE}
+}
+@article{bakari2007development,
+  title={Development of a multi-arm mobile robot for nuclear decommissioning tasks},
+  author={Bakari, Mohamed J and Zied, Khaled M and Seward, Derek W},
+  journal={International Journal of Advanced Robotic Systems},
+  volume={4},
+  number={4},
+  pages={502--524},
+  year={2007}
+}
+%aquatic
+@article{lane1997amadeus,
+  title={AMADEUS: advanced manipulation for deep underwater sampling},
+  author={Lane, David M and Davies, J Bruce C and Casalino, Giuseppe and Bartolini, Giorgio and Cannata, Giorgio and Veruggio, Gianmarco and Canals, Miguel and Smith, Colin and O'Brien, Desmond J and Pickett, Marc and others},
+  journal={Robotics \& Automation Magazine, IEEE},
+  volume={4},
+  number={4},
+  pages={34--45},
+  year={1997},
+  publisher={IEEE}
+}
+
+@book{davis2014vida,
+  title={La Vida Robot},
+  author={Davis, Joshua},
+  year={2014},
+  publisher={HarperCollins}
+}
+%others
+@phdthesis{rouleau2015design,
+  title={Design and Evaluation of an Underactuated Robotic Gripper for Manipulation Associated with Disaster Response},
+  author={Rouleau, Michael Thomas},
+  year={2015},
+  school={Virginia Tech}
+}
+
+%grasping correctly
+@article{li1988task,
+  title={Task-oriented optimal grasping by multifingered robot hands},
+  author={Li, Zexiang and Sastry, S Shankar},
+  journal={Robotics and Automation, IEEE Journal of},
+  volume={4},
+  number={1},
+  pages={32--44},
+  year={1988},
+  publisher={IEEE}
+}
+@book{murray1990grasping,
+  title={Grasping and manipulation using multifingered robot hands},
+  author={Murray, Richard M and Sastry, Shankar},
+  year={1990},
+  publisher={Electronics Research Laboratory, College of Engineering, University of California}
+}
+@article{romano2011human,
+  title={Human-inspired robotic grasp control with tactile sensing},
+  author={Romano, Joseph M and Hsiao, Kaijen and Niemeyer, G{\"u}nter and Chitta, Sachin and Kuchenbecker, Katherine J},
+  journal={Robotics, IEEE Transactions on},
+  volume={27},
+  number={6},
+  pages={1067--1079},
+  year={2011},
+  publisher={IEEE}
+}
+@inproceedings{dollar2007simple,
+  title={Simple, robust autonomous grasping in unstructured environments},
+  author={Dollar, Aaron M and Howe, Robert D},
+  booktitle={Robotics and Automation, 2007 IEEE International Conference on},
+  pages={4693--4700},
+  year={2007},
+  organization={IEEE}
+}
+
+%recent underactutated 
+@inproceedings{massa2002design,
+  title={Design and development of an underactuated prosthetic hand},
+  author={Massa, Bruno and Roccella, Stefano and Carrozza, Maria Chiara and Dario, Paolo},
+  booktitle={Robotics and Automation, 2002. Proceedings. ICRA'02. IEEE International Conference on},
+  volume={4},
+  pages={3374--3379},
+  year={2002},
+  organization={IEEE}
+}
+
+@article{laliberte2002underactuation,
+  title={Underactuation in robotic grasping hands},
+  author={Lalibert{\'e}, Thierry and Birglen, Lionel and Gosselin, Cl{\'e}ment},
+  journal={Machine Intelligence \& Robotic Control},
+  volume={4},
+  number={3},
+  pages={1--11},
+  year={2002}
+}
+
+@inproceedings{ma2012dexterous,
+  title={Dexterous manipulation with underactuated fingers: Flip-and-pinch task},
+  author={Ma, Raymond R and Odhner, Lael U and Dollar, Aaron M},
+  booktitle={Robotics and Automation (ICRA), 2012 IEEE International Conference on},
+  pages={3551--3552},
+  year={2012},
+  organization={IEEE}
+}
+@inproceedings{kamikawa2008underactuated,
+  title={Underactuated five-finger prosthetic hand inspired by grasping force distribution of humans},
+  author={Kamikawa, Yasuhisa and Maeno, Takashi},
+  booktitle={Intelligent Robots and Systems, 2008. IROS 2008. IEEE/RSJ International Conference on},
+  pages={717--722},
+  year={2008},
+  organization={IEEE}
+}
+@book{rea2011design,
+  title={On the design of underactuated finger mechanisms for robotic hands},
+  author={Rea, Pierluigi},
+  year={2011},
+  publisher={INTECH Open Access Publisher}
+}
+%easy control
+@article{laliberte2002underactuation,
+  title={Underactuation in robotic grasping hands},
+  author={Lalibert{\'e}, Thierry and Birglen, Lionel and Gosselin, Cl{\'e}ment},
+  journal={Machine Intelligence \& Robotic Control},
+  volume={4},
+  number={3},
+  pages={1--11},
+  year={2002}
+}
+
+@book{birglen2007underactuated,
+  title={Underactuated robotic hands},
+  author={Birglen, Lionel and Lalibert{\'e}, Thierry and Gosselin, Cl{\'e}ment M},
+  volume={40},
+  year={2007},
+  publisher={Springer}
+}
+%ihy hand
+@article{odhner2014compliant,
+  title={A compliant, underactuated hand for robust manipulation},
+  author={Odhner, Lael U and Jentoft, Leif P and Claffee, Mark R and Corson, Nicholas and Tenzer, Yaroslav and Ma, Raymond R and Buehler, Martin and Kohout, Robert and Howe, Robert D and Dollar, Aaron M},
+  journal={The International Journal of Robotics Research},
+  volume={33},
+  number={5},
+  pages={736--752},
+  year={2014},
+  publisher={SAGE Publications}
+}
+%ilimb ultra
+@misc{ilimb,
+  author = {Tuch Bionics Inc. and Touch Bionics Limited},
+  title = {{ILimb Ultra}},
+  howpublished = "\url{http://www.touchbionics.com/products/active-prostheses/i-limb-ultra}",
+  year = {2016}, 
+  note = "[Online; accessed 19-March-2016]"
+}
+%shadow edc hand
+@misc{shadow,
+  author = {Shadow Robot Company},
+  title = {{Shadow Hand}},
+  howpublished = "\url{https://www.shadowrobot.com/products/dexterous-hand/}",
+  year = {2016}, 
+  note = "[Online; accessed 10-March-2016]"
+}
+
+%handroid hand
+
+@misc{handroid1,
+  author = {ITK co.ltd},
+  title = {{The Handroid}},
+  howpublished = "\url{http://www.itk-pro.com/en/pro/kindengisyu.htm}",
+  year = {2011}, 
+  note = "[Online; accessed 3-March-2016]"
+}
+
+@misc{handroid2,
+  author = {Tim Hornyak},
+  title = {{Handroid is a low-cost, flexible robot hand}},
+  howpublished = "\url{http://www.cnet.com/news/handroid-is-a-low-cost-flexible-robot-hand/}",
+  year = {2016}, 
+  note = "[Online; accessed 1-March-2016]"
+}
+
+%michelangelo hand
+@misc{michelangelo,
+  author = {Ottobock Company},
+  title = {{Michelangelo prosthetic hand}},
+  howpublished = "\url{http://www.ottobockus.com/prosthetics/upper-limb-prosthetics/solution-overview/michelangelo-prosthetic-hand/}",
+  year = {2013}, 
+  note = "[Online; accessed 4-March-2016]"
+}
+
+%ih2 azzurra
+@inproceedings{cipriani2008mechanical,
+  title={Mechanical design of a transradial cybernetic hand},
+  author={Cipriani, C and Controzzi, M and Carrozza, MC},
+  booktitle={Proceedings of the 2008 IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  pages={22--26},
+  year={2008}
+}
+
+@misc{azzurra,
+  author = {Prensilia Srl},
+  title = {{Robotic Hands (Self-contained)}},
+  howpublished = "\url{http://www.prensilia.com/index.php?q=en/node/40}",
+  year = {2009-2016}, 
+  note = "[Online; accessed 4-March-2016]"
+}
+%dlr hand
+@inproceedings{butterfass2001dlr,
+  title={DLR-Hand II: Next generation of a dextrous robot hand},
+  author={Butterfa{\ss}, J{\"o}rg and Grebenstein, Markus and Liu, Hong and Hirzinger, Gerd},
+  booktitle={Robotics and Automation, 2001. Proceedings 2001 ICRA. IEEE International Conference on},
+  volume={1},
+  pages={109--114},
+  year={2001},
+  organization={IEEE}
+}
+@inproceedings{butterfass2004design,
+  title={Design and experiences with DLR hand II},
+  author={Butterfass, J and Fischer, M and Grebenstein, M and Haidacher, S and Hirzinger, G},
+  booktitle={Automation Congress, 2004. Proceedings. World},
+  volume={15},
+  pages={105--110},
+  year={2004},
+  organization={IEEE}
+}
+%pisa hand
+@article{catalano2014adaptive,
+  title={Adaptive synergies for the design and control of the Pisa/IIT SoftHand},
+  author={Catalano, Manuel G and Grioli, Giorgio and Farnioli, Edoardo and Serio, Alessandro and Piazza, Cristina and Bicchi, Antonio},
+  journal={The International Journal of Robotics Research},
+  volume={33},
+  number={5},
+  pages={768--782},
+  year={2014},
+  publisher={SAGE Publications}
+}
+
+%ar10 hand
+@misc{ar10,
+  author = {Active Robots (Contracts) Ltd},
+  title = {{Introducing the new AR10 Humanoid Robotic Hand}},
+  howpublished = "\url{http://www.active8robots.com/robots/ar10-robotic-hand/}",
+  year = {2014-2016}, 
+  note = "[Online; accessed 7-March-2016]"
+}
+%meka hand
+@misc{meka1,
+  author = {Travis Deyle},
+  title = {{Meka Robotics' Humanoid Torso and Anthropomorphic Hands}},
+  howpublished = "\url{http://www.hizook.com/blog/2009/10/18/meka-robotics-humanoid-torso-and-anthropomorphic-hands}",
+  year = {October 18, 2009 }, 
+  note = "[Online; accessed 7-March-2016]"
+}
+
+@misc{meka2,
+  author = {Meka robotics},
+  title = {{H2 Compliant Hand }},
+  howpublished = "\url{http://www.mindtrans.narod.ru/pdfs/meka_H2_hand_product_sheet_10_2009.pdf}" , note = "[Online; accessed 7-March-2016]"
+}
+%gripper
+
+@misc{gripper1,
+  author = {Robotiq},
+  title = {{Adaptive Robot Gripper 3-Finger}},
+  howpublished = "\url{http://robotiq.com/products/industrial-robot-hand/}",
+  year = {2016 }, 
+  note = "[Online; accessed 10-March-2016]"
+}
+
+@misc{gripper2,
+  author = {Travis Deyle},
+  title = {{New robot hand called the "Adaptive Gripper" from Robotiq (Canadian robotics startup)}},
+  howpublished = "\url{http://www.hizook.com/blog/2010/05/01/new-robot-hand-called-adaptive-gripper-robotiq-canadian-robotics-startup}",
+  year = {May 1, 2010  }, 
+  note = "[Online; accessed 10-March-2016]"
+}
+%sdm hand
+@article{dollar2010highly,
+  title={The highly adaptive SDM hand: Design and performance evaluation},
+  author={Dollar, Aaron M and Howe, Robert D},
+  journal={The international journal of robotics research},
+  volume={29},
+  number={5},
+  pages={585--597},
+  year={2010},
+  publisher={SAGE Publications}
+}
+%otros
+@inproceedings{choi2009list,
+  title={A list of household objects for robotic retrieval prioritized by people with ALS},
+  author={Choi, Young Sang and Deyle, Travis and Chen, Tiffany and Glass, Jonathan D and Kemp, Charles C},
+  booktitle={Rehabilitation Robotics, 2009. ICORR 2009. IEEE International Conference on},
+  pages={510--517},
+  year={2009},
+  organization={IEEE}
+}
+
+
+%manos usadas en robots en aplicaciones asistivas
+@inproceedings{rhee2004door,
+  title={Door opening control using the multi-fingered robotic hand for the indoor service robot},
+  author={Rhee, Changju and Chung, Woojin and Kim, Munsang and Shim, Youngbo and Lee, Hyungjin},
+  booktitle={Robotics and Automation, 2004. Proceedings. ICRA'04. 2004 IEEE International Conference on},
+  volume={4},
+  pages={4011--4016},
+  year={2004},
+  organization={IEEE}
+}
+
+@article{farry1996myoelectric,
+  title={Myoelectric teleoperation of a complex robotic hand},
+  author={Farry, Kristin A and Walker, Ian D and Baraniuk, Richard G},
+  journal={IEEE Transactions on Robotics and Automation},
+  volume={12},
+  number={5},
+  pages={775--788},
+  year={1996},
+  publisher={IEEE}
+}
+@inproceedings{bitzer2006learning,
+  title={Learning EMG control of a robotic hand: towards active prostheses},
+  author={Bitzer, Sebastian and Van Der Smagt, Patrick},
+  booktitle={Robotics and Automation, 2006. ICRA 2006. Proceedings 2006 IEEE International Conference on},
+  pages={2819--2823},
+  year={2006},
+  organization={IEEE}
+}
+@inproceedings{kargov2005development,
+  title={Development of an anthropomorphic hand for a mobile assistive robot},
+  author={Kargov, A and Asfour, T and Pylatiuk, C and Oberle, R and Klosek, H and Schulz, S and Regenstein, K and Bretthauer, G and Dillmann, R},
+  booktitle={Rehabilitation Robotics, 2005. ICORR 2005. 9th International Conference on},
+  pages={182--186},
+  year={2005},
+  organization={IEEE}
+}
+@article{townsend2000barretthand,
+  title={The BarrettHand grasper--programmably flexible part handling and assembly},
+  author={Townsend, William},
+  journal={Industrial Robot: an international journal},
+  volume={27},
+  number={3},
+  pages={181--188},
+  year={2000},
+  publisher={MCB UP Ltd}
+}
+@article{hochberg2012reach,
+  title={Reach and grasp by people with tetraplegia using a neurally controlled robotic arm},
+  author={Hochberg, Leigh R and Bacher, Daniel and Jarosiewicz, Beata and Masse, Nicolas Y and Simeral, John D and Vogel, Joern and Haddadin, Sami and Liu, Jie and Cash, Sydney S and van der Smagt, Patrick and others},
+  journal={Nature},
+  volume={485},
+  number={7398},
+  pages={372--375},
+  year={2012},
+  publisher={Nature Research}
+}
+
+%%
+@inproceedings{namiki2004development,
+  title={Development of a high-speed multifingered hand system},
+  author={Namiki, Akio and Imai, Yoshiro and Kaneko, Makoto and Ishikawa, Masatoshi},
+  booktitle={Proc. of Int. Conf. On Intelligent Manipulation and Grasping, Genova-Itary},
+  pages={85--90},
+  year={2004}
+}
+
+@inproceedings{homberg2015haptic,
+  title={Haptic identification of objects using a modular soft robotic gripper},
+  author={Homberg, Bianca S and Katzschmann, Robert K and Dogar, Mehmet R and Rus, Daniela},
+  booktitle={Intelligent Robots and Systems (IROS), 2015 IEEE/RSJ International Conference on},
+  pages={1698--1705},
+  year={2015},
+  organization={IEEE}
+}
+@article{deimel2016novel,
+  title={A novel type of compliant and underactuated robotic hand for dexterous grasping},
+  author={Deimel, Raphael and Brock, Oliver},
+  journal={The International Journal of Robotics Research},
+  volume={35},
+  number={1-3},
+  pages={161--185},
+  year={2016},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+
+
+@article{kapandji1985clinical,
+  title={Clinical test of apposition and counter-apposition of the thumb},
+  author={Kapandji, A},
+  journal={Annales de chirurgie de la main: organe officiel des societes de chirurgie de la main},
+  volume={5},
+  number={1},
+  pages={67--73},
+  year={1985}
+}
+@article{kapandij1982physiology,
+  title={The Physiology of the Joints-Lower Limb},
+  author={Kapandij, IA},
+  journal={Churchil Livinstone, Edinburgh},
+  year={1982}
+}
+
+
+@article{mason2001hand,
+  title={Hand synergies during reach-to-grasp},
+  author={Mason, Carolyn R and Gomez, Jose E and Ebner, Timothy J},
+  journal={Journal of Neurophysiology},
+  volume={86},
+  number={6},
+  pages={2896--2910},
+  year={2001},
+  publisher={Am Physiological Soc}
+}
+
+@article{lemon1999neural,
+  title={Neural control of dexterity: what has been achieved?},
+  author={Lemon, RN},
+  journal={Experimental Brain Research},
+  volume={128},
+  number={1-2},
+  pages={6--12},
+  year={1999},
+  publisher={Springer}
+}
+
+
+%visual aided algorithms
+@inproceedings{borst1999fast,
+  title={A fast and robust grasp planner for arbitrary 3D objects},
+  author={Borst, Ch and Fischer, Max and Hirzinger, Gerd},
+  booktitle={Robotics and Automation, 1999. Proceedings. 1999 IEEE International Conference on},
+  volume={3},
+  pages={1890--1896},
+  year={1999},
+  organization={IEEE}
+}
+@inproceedings{calli2011grasping,
+  title={Grasping of unknown objects via curvature maximization using active vision},
+  author={Calli, Berk and Wisse, Martijn and Jonker, Pieter},
+  booktitle={Intelligent Robots and Systems (IROS), 2011 IEEE/RSJ International Conference on},
+  pages={995--1001},
+  year={2011},
+  organization={IEEE}
+}
+@inproceedings{kehoe2013cloud,
+  title={Cloud-based robot grasping with the google object recognition engine},
+  author={Kehoe, Ben and Matsukawa, Akihiro and Candido, Sal and Kuffner, James and Goldberg, Ken},
+  booktitle={Robotics and Automation (ICRA), 2013 IEEE International Conference on},
+  pages={4263--4270},
+  year={2013},
+  organization={IEEE}
+}
+@inproceedings{namiki1996optimal,
+  title={Optimal grasping using visual and tactile feedback},
+  author={Namiki, Akio and Ishikawa, Masatoshi},
+  booktitle={Multisensor Fusion and Integration for Intelligent Systems, 1996. IEEE/SICE/RSJ International Conference on},
+  pages={589--596},
+  year={1996},
+  organization={IEEE}
+}
+@inproceedings{nguyen1987constructing,
+  title={Constructing stable grasps in 3D},
+  author={Nguyen, Van-Duc},
+  booktitle={Robotics and Automation. Proceedings. 1987 IEEE International Conference on},
+  volume={4},
+  pages={234--239},
+  year={1987},
+  organization={IEEE}
+}
+
+@article{saxena2008robotic,
+  title={Robotic grasping of novel objects using vision},
+  author={Saxena, Ashutosh and Driemeyer, Justin and Ng, Andrew Y},
+  journal={The International Journal of Robotics Research},
+  volume={27},
+  number={2},
+  pages={157--173},
+  year={2008},
+  publisher={SAGE Publications}
+}
+
+@article{gabiccini2013grasp,
+  title={Grasp analysis tools for synergistic underactuated robotic hands},
+  author={Gabiccini, Marco and Farnioli, Edoardo and Bicchi, Antonio},
+  journal={The International Journal of Robotics Research},
+  volume={32},
+  number={13},
+  pages={1553--1576},
+  year={2013},
+  publisher={SAGE Publications}
+}
+
+@article{prattichizzo2012manipulability,
+  title={On the manipulability ellipsoids of underactuated robotic hands with compliance},
+  author={Prattichizzo, Domenico and Malvezzi, Monica and Gabiccini, Marco and Bicchi, Antonio},
+  journal={Robotics and Autonomous Systems},
+  volume={60},
+  number={3},
+  pages={337--346},
+  year={2012},
+  publisher={Elsevier}
+}
+@article{palli2012modeling,
+  title={Modeling, identification, and control of tendon-based actuation systems},
+  author={Palli, Gianluca and Borghesan, Gianni and Melchiorri, Claudio},
+  journal={IEEE Transactions on Robotics},
+  volume={28},
+  number={2},
+  pages={277--290},
+  year={2012},
+  publisher={IEEE}
+}
+
+@article{palli2013modeling,
+  title={Modeling and control of the twisted string actuation system},
+  author={Palli, Gianluca and Natale, Ciro and May, Chris and Melchiorri, Claudio and Wurtz, Thomas},
+  journal={IEEE/ASME Transactions on Mechatronics},
+  volume={18},
+  number={2},
+  pages={664--673},
+  year={2013},
+  publisher={IEEE}
+}
+
+@incollection{palli2012innovative,
+  title={Innovative technologies for the next generation of robotic hands},
+  author={Palli, Gianluca and Melchiorri, Claudio and Vassura, Gabriele and Berselli, Giovanni and Pirozzi, Salvatore and Natale, Ciro and De Maria, Giuseppe and May, Chris},
+  booktitle={Advanced Bimanual Manipulation},
+  pages={173--218},
+  year={2012},
+  publisher={Springer}
+}
+
+@article{palli2011force,
+  title={Force sensor based on discrete optoelectronic components and compliant frames},
+  author={Palli, G and Pirozzi, S},
+  journal={Sensors and Actuators A: Physical},
+  volume={165},
+  number={2},
+  pages={239--249},
+  year={2011},
+  publisher={Elsevier}
+}
+
+@techreport{johnson1987kinematic,
+  title={Kinematic and dynamic analyses of the Stanford/JPL robot hand.[MACSYMA]},
+  author={Johnson, VJ and Starr, GP},
+  year={1987},
+  institution={Sandia National Labs., Albuquerque, NM (USA); New Mexico Univ., Albuquerque (USA). Dept. of Mechanical Engineering}
+}
+@article{salisbury1982articulated,
+  title={Articulated hands: Force control and kinematic issues},
+  author={Salisbury, J Kenneth and Craig, John J},
+  journal={The International journal of Robotics research},
+  volume={1},
+  number={1},
+  pages={4--17},
+  year={1982},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+
+@article{jacobsen1984utah,
+  title={The UTAH/MIT dextrous hand: Work in progress},
+  author={Jacobsen, Steve C and Wood, John E and Knutti, DF and Biggers, Klaus B},
+  journal={The International Journal of Robotics Research},
+  volume={3},
+  number={4},
+  pages={21--50},
+  year={1984},
+  publisher={Sage Publications}
+}
+@inproceedings{jacobsen1986design,
+  title={Design of the Utah/MIT dextrous hand},
+  author={Jacobsen, Steve and Iversen, E and Knutti, D and Johnson, R and Biggers, K},
+  booktitle={Robotics and Automation. Proceedings. 1986 IEEE International Conference on},
+  volume={3},
+  pages={1520--1532},
+  year={1986},
+  organization={IEEE}
+}
+@incollection{bekey1990control,
+  title={Control architecture for the Belgrade/USC hand},
+  author={Bekey, George A and Tomovic, Rajko and Zeljkovic, Ilija},
+  booktitle={Dextrous robot hands},
+  pages={136--149},
+  year={1990},
+  publisher={Springer}
+}
+@misc{barretHand2,
+  %author = {Travis Deyle},
+  title = {{Barrett Technology, LLC}},
+  howpublished = "\url{http://www.barrett.com/products-hand.htm}",
+  %%year = {May 1, 2010  }, 
+  note = "[Online; accessed 3-December-2016]"
+}
+@inproceedings{butterfass1998dlr,
+  title={DLR's multisensory articulated hand. I. Hard-and software architecture},
+  author={Butterfass, Joerg and Hirzinger, Gerd and Knoch, S and Liu, Hong},
+  booktitle={Robotics and Automation, 1998. Proceedings. 1998 IEEE International Conference on},
+  volume={3},
+  pages={2081--2086},
+  year={1998},
+  organization={IEEE}
+}
+@inproceedings{caffaz1998design,
+  title={The design and development of the DIST-Hand dextrous gripper},
+  author={Caffaz, Andrea and Cannata, Giorgio},
+  booktitle={Robotics and Automation, 1998. Proceedings. 1998 IEEE International Conference on},
+  volume={3},
+  pages={2075--2080},
+  year={1998},
+  organization={IEEE}
+}
+@inproceedings{lovchik1999robonaut,
+  title={The robonaut hand: A dexterous robot hand for space},
+  author={Lovchik, CS and Diftler, Myron A},
+  booktitle={Robotics and Automation, 1999. Proceedings. 1999 IEEE International Conference on},
+  volume={2},
+  pages={907--912},
+  year={1999},
+  organization={IEEE}
+}
+@inproceedings{kawasaki2004toward,
+  title={Toward next stage of kinetic humanoid hand},
+  author={Kawasaki, Haruhisa and Mouri, Tetsuya and Ito, Satoshi},
+  booktitle={Automation Congress, 2004. Proceedings. World},
+  volume={15},
+  pages={129--134},
+  year={2004},
+  organization={IEEE}
+}
+@article{folgheraiter2000blackfingers,
+  title={Blackfingers an artificial hand that copies human hand in structure, size, and function},
+  author={Folgheraiter, Michele and Gini, Giuseppina},
+  journal={Proc. IEEE Humanoids},
+  pages={4},
+  year={2000}
+}
+@inproceedings{fukaya2000design,
+  title={Design of the TUAT/Karlsruhe humanoid hand},
+  author={Fukaya, Naoki and Toyama, Shigeki and Asfour, Tamim and Dillmann, R{\"u}diger},
+  booktitle={Intelligent Robots and Systems, 2000.(IROS 2000). Proceedings. 2000 IEEE/RSJ International Conference on},
+  volume={3},
+  pages={1754--1759},
+  year={2000},
+  organization={IEEE}
+}
+@inproceedings{schulz2001new,
+  title={A new ultralight anthropomorphic hand},
+  author={Schulz, Stefan and Pylatiuk, Christian and Bretthauer, Georg},
+  booktitle={Robotics and Automation, 2001. Proceedings 2001 ICRA. IEEE International Conference on},
+  volume={3},
+  pages={2437--2441},
+  year={2001},
+  organization={IEEE}
+}
+@misc{VFH,
+  %author = {Travis Deyle},
+  title = {{Kick-off robotics centre}},
+  howpublished = "\url{http://www.demcon.nl/nieuws/news/Future_of_robotics/}",
+  %%year = {May 1, 2010  }, 
+  note = "[Online; accessed 15-April-2013]"
+}
+@book{tai2007design,
+  title={Design of an anthropomorphic robotic hand for space operations},
+  author={Tai, Emily},
+  year={2007},
+  publisher={ProQuest}
+}
+@inproceedings{delaurentis2000development,
+  title={Development of a shape memory alloy actuated robotic hand},
+  author={DeLaurentis, KJ and Mavroidis, C and Pfeiffer, C},
+  booktitle={7th International Conference on New Actuators (ACTUATOR 2000), Bremen, Germany, June},
+  pages={19--21},
+  year={2000}
+}
+@inproceedings{kargov2005development,
+  title={Development of an anthropomorphic hand for a mobile assistive robot},
+  author={Kargov, A and Asfour, T and Pylatiuk, C and Oberle, R and Klosek, H and Schulz, S and Regenstein, K and Bretthauer, G and Dillmann, R},
+  booktitle={Rehabilitation Robotics, 2005. ICORR 2005. 9th International Conference on},
+  pages={182--186},
+  year={2005},
+  organization={IEEE}
+}
+@inproceedings{lotti2005development,
+  title={Development of UB hand 3: Early results},
+  author={Lotti, Fabrizio and Tiezzi, Paolo and Vassura, Gabriele and Biagiotti, Luigi and Palli, Gianluca and Melchiorri, Claudio},
+  booktitle={Robotics and Automation, 2005. ICRA 2005. Proceedings of the 2005 IEEE International Conference on},
+  pages={4488--4493},
+  year={2005},
+  organization={IEEE}
+}
+@inproceedings{cabas2005design,
+  title={Design and development of a light weight embodied robotic hand activated with only one actuator. IEEE},
+  author={Cabas, R and Balaguer, C},
+  booktitle={RSJ International Conference on Intelligent Robots and Systems (IROS’2005)},
+  year={2005}
+}
+@inproceedings{cabas2006optimized,
+  title={Optimized design of the underactuated robotic hand},
+  author={Cabas, Ramiro and Cabas, Luis Maria and Balaguer, Carlos},
+  booktitle={Robotics and Automation, 2006. ICRA 2006. Proceedings 2006 IEEE International Conference on},
+  pages={982--987},
+  year={2006},
+  organization={IEEE}
+}
+@article{martell2007robotic,
+  title={Robotic hands: Design review and proposal of new design process},
+  author={Martell, J and Gini, Giuseppina},
+  journal={Image},
+  volume={180},
+  pages={9270},
+  year={2007}
+}
+@article{zollo2007biomechatronic,
+  title={Biomechatronic design and control of an anthropomorphic artificial hand for prosthetic and robotic applications},
+  author={Zollo, Loredana and Roccella, Stefano and Guglielmelli, Eugenio and Carrozza, M Chiara and Dario, Paolo},
+  journal={IEEE/ASME Transactions On Mechatronics},
+  volume={12},
+  number={4},
+  pages={418--429},
+  year={2007},
+  publisher={IEEE}
+}
+@inproceedings{gaiser2008new,
+  title={A new anthropomorphic robotic hand},
+  author={Gaiser, Immanuel and Schulz, Stefan and Kargov, Artem and Klosek, Heinrich and Bierbaum, Alexander and Pylatiuk, Christian and Oberle, Reinhold and Werner, Tino and Asfour, Tamim and Bretthauer, Georg and others},
+  booktitle={Humanoid Robots, 2008. Humanoids 2008. 8th IEEE-RAS International Conference on},
+  pages={418--422},
+  year={2008},
+  organization={IEEE}
+}
+@article{berselli2009integrated,
+  title={Integrated mechatronic design for a new generation of robotic hands},
+  author={Berselli, G and Borghesan, G and Brandi, M and Melchiorri, C and Natale, C and Palli, G and Pirozzi, S and Vassura, G},
+  journal={IFAC Proceedings Volumes},
+  volume={42},
+  number={16},
+  pages={8--13},
+  year={2009},
+  publisher={Elsevier}
+}
+@article{xiong2009super,
+  title={Super under-actuated multi-fingered mechanical hand with modular self-adaptive gear-rack mechanism},
+  author={Xiong, Youlun and Zhang, Wenzeng and Che, Demeng and Liu, Hongbin and Ma, Xiande and Chen, Qiang and Du, Dong and Sun, Zhenguo},
+  journal={Industrial Robot: An International Journal},
+  volume={36},
+  number={3},
+  pages={255--262},
+  year={2009},
+  publisher={Emerald Group Publishing Limited}
+}
+@inproceedings{wang2011highly,
+  title={A highly-underactuated robotic hand with force and joint angle sensors},
+  author={Wang, Long and DelPreto, Joseph and Bhattacharyya, Sam and Weisz, Jonathan and Allen, Peter K},
+  booktitle={Intelligent Robots and Systems (IROS), 2011 IEEE/RSJ International Conference on},
+  pages={1380--1385},
+  year={2011},
+  organization={IEEE}
+}
+
+@article{lee2016kitech,
+  title={KITECH-Hand: A Highly Dexterous and Modularized Robotic Hand},
+  author={Lee, Dong-Hyuk and Park, Jae-Han and Park, Sung-Woo and Baeg, Moon-Hong and Bae, Jihun},
+  journal={IEEE/ASME Transactions on Mechatronics},
+  year={2016},
+  publisher={IEEE}
+}
+@inproceedings{grioli2012adaptive,
+  title={Adaptive synergies: an approach to the design of under-actuated robotic hands},
+  author={Grioli, Giorgio and Catalano, Manuel and Silvestro, Emanuele and Tono, Simone and Bicchi, Antonio},
+  booktitle={Intelligent Robots and Systems (IROS), 2012 IEEE/RSJ International Conference on},
+  pages={1251--1256},
+  year={2012},
+  organization={IEEE}
+}
+
+@article{ozawa2014design,
+  title={Design and control of a three-fingered tendon-driven robotic hand with active and passive tendons},
+  author={Ozawa, Ryuta and Hashirii, Kazunori and Yoshimura, Yohtaro and Moriya, Michinori and Kobayashi, Hiroaki},
+  journal={Autonomous Robots},
+  volume={36},
+  number={1-2},
+  pages={67--78},
+  year={2014},
+  publisher={Springer}
+}
+@inproceedings{yoshida2016development,
+  title={Development of five-finger robotic hand using master-slave control for hand-assisted laparoscopic surgery},
+  author={Yoshida, Koki and Yamada, Hiroshi and Kato, Ryu and Seki, Tatsuya and Yokoi, Hiroshi and Mukai, Masaya},
+  booktitle={Engineering in Medicine and Biology Society (EMBC), 2016 IEEE 38th Annual International Conference of the},
+  pages={5124--5127},
+  year={2016},
+  organization={IEEE}
+}
+@inproceedings{xu2016design,
+  title={Design of a highly biomimetic anthropomorphic robotic hand towards artificial limb regeneration},
+  author={Xu, Zhe and Todorov, Emanuel},
+  booktitle={Robotics and Automation (ICRA), 2016 IEEE International Conference on},
+  pages={3485--3492},
+  year={2016},
+  organization={IEEE}
+}
+@inproceedings{iberall1994development,
+  title={On the development of EMG control for a prosthesis using a robotic hand},
+  author={Iberall, Thea and Sukhatme, Gaurav S and Beattie, Denise and Bekey, George A},
+  booktitle={Robotics and Automation, 1994. Proceedings., 1994 IEEE International Conference on},
+  pages={1753--1758},
+  year={1994},
+  organization={IEEE}
+}
+@article{lundstrom1974industrial,
+  title={Industrial robot grippers},
+  author={Lundstr{\"o}m, Goran},
+  journal={Industrial Robot: An International Journal},
+  volume={1},
+  number={2},
+  pages={72--82},
+  year={1974},
+  publisher={MCB UP Ltd}
+}
+%%%control and modelling
+@article{brost1988automatic,
+  title={Automatic grasp planning in the presence of uncertainty},
+  author={Brost, Randy C},
+  journal={The International Journal of Robotics Research},
+  volume={7},
+  number={1},
+  pages={3--17},
+  year={1988},
+  publisher={Sage Publications}
+}
+@article{li1988task,
+  title={Task-oriented optimal grasping by multifingered robot hands},
+  author={Li, Zexiang and Sastry, S Shankar},
+  journal={IEEE Journal on Robotics and Automation},
+  volume={4},
+  number={1},
+  pages={32--44},
+  year={1988},
+  publisher={IEEE}
+}
+@article{cutkosky1989computing,
+  title={Computing and controlling compliance of a robotic hand},
+  author={Cutkosky, Mark R and Kao, Imin},
+  journal={IEEE Transactions on Robotics and Automation},
+  volume={5},
+  number={2},
+  pages={151--165},
+  year={1989},
+  publisher={IEEE}
+}
+@inproceedings{houshangi1990control,
+  title={Control of a robotic manipulator to grasp a moving target using vision},
+  author={Houshangi, N},
+  booktitle={Robotics and Automation, 1990. Proceedings., 1990 IEEE International Conference on},
+  pages={604--609},
+  year={1990},
+  organization={IEEE}
+}
+@article{bekey1993knowledge,
+  title={Knowledge-based control of grasping in robot hands using heuristics from human motor skills},
+  author={Bekey, George A and Liu, Huan and Tomovic, Rajko and Karplus, Walter J},
+  journal={IEEE Transactions on Robotics and Automation},
+  volume={9},
+  number={6},
+  pages={709--722},
+  year={1993},
+  publisher={IEEE}
+}
+@article{hartl1995dextrous,
+  title={Dextrous manipulation with multifingered robot hands including rolling and slipping of the fingertips},
+  author={H{\"a}rtl, Harald},
+  journal={Robotics and autonomous systems},
+  volume={14},
+  number={1},
+  pages={29--53},
+  year={1995},
+  publisher={Elsevier}
+}
+@inproceedings{bicchi2000robotic,
+  title={Robotic grasping and contact: A review},
+  author={Bicchi, Antonio and Kumar, Vijay},
+  booktitle={Robotics and Automation, 2000. Proceedings. ICRA'00. IEEE International Conference on},
+  volume={1},
+  pages={348--353},
+  year={2000},
+  organization={IEEE}
+}
+@article{bicchi2000hands,
+  title={Hands for dexterous manipulation and robust grasping: A difficult road toward simplicity},
+  author={Bicchi, Antonio},
+  journal={IEEE Transactions on robotics and automation},
+  volume={16},
+  number={6},
+  pages={652--662},
+  year={2000},
+  publisher={IEEE}
+}
+@article{chan2000dynamic,
+  title={Dynamic simulation of multi-fingered robot hands based on a unified model},
+  author={Chan, Joseph C and Liu, Yunhui},
+  journal={Robotics and Autonomous Systems},
+  volume={32},
+  number={2},
+  pages={185--201},
+  year={2000},
+  publisher={Elsevier}
+}
+@inproceedings{kragic2001real,
+  title={Real-time tracking meets online grasp planning},
+  author={Kragic, Danica and Miller, Andrew T and Allen, Peter K},
+  booktitle={Robotics and Automation, 2001. Proceedings 2001 ICRA. IEEE International Conference on},
+  volume={3},
+  pages={2460--2465},
+  year={2001},
+  organization={IEEE}
+}
+@inproceedings{miller2003automatic,
+  title={Automatic grasp planning using shape primitives},
+  author={Miller, Andrew T and Knoop, Steffen and Christensen, Henrik I and Allen, Peter K},
+  booktitle={Robotics and Automation, 2003. Proceedings. ICRA'03. IEEE International Conference on},
+  volume={2},
+  pages={1824--1829},
+  year={2003},
+  organization={IEEE}
+}
+@article{miller2004graspit,
+  title={Graspit! a versatile simulator for robotic grasping},
+  author={Miller, Andrew T and Allen, Peter K},
+  journal={IEEE Robotics \& Automation Magazine},
+  volume={11},
+  number={4},
+  pages={110--122},
+  year={2004},
+  publisher={IEEE}
+}
+@inproceedings{pollard2005physically,
+  title={Physically based grasping control from example},
+  author={Pollard, Nancy S and Zordan, Victor Brian},
+  booktitle={Proceedings of the 2005 ACM SIGGRAPH/Eurographics symposium on Computer animation},
+  pages={311--318},
+  year={2005},
+  organization={ACM}
+}
+@article{chen2006grasping,
+  title={Grasping control of robot hand using fuzzy neural network},
+  author={Chen, Peng and Hasegawa, Yoshizo and Yamashita, Mitushi},
+  journal={Advances in Neural Networks-ISNN 2006},
+  pages={1178--1187},
+  year={2006},
+  publisher={Springer}
+}
+@article{yoshikawa2010multifingered,
+  title={Multifingered robot hands: Control for grasping and manipulation},
+  author={Yoshikawa, Tsuneo},
+  journal={Annual Reviews in Control},
+  volume={34},
+  number={2},
+  pages={199--208},
+  year={2010},
+  publisher={Elsevier}
+}
+@article{romano2011human,
+  title={Human-inspired robotic grasp control with tactile sensing},
+  author={Romano, Joseph M and Hsiao, Kaijen and Niemeyer, G{\"u}nter and Chitta, Sachin and Kuchenbecker, Katherine J},
+  journal={IEEE Transactions on Robotics},
+  volume={27},
+  number={6},
+  pages={1067--1079},
+  year={2011},
+  publisher={IEEE}
+}
+ @article{boughdiri2012dynamic,
+  title={Dynamic modeling and control of a multi-fingered robot hand for grasping task},
+  author={Boughdiri, Rim and Nasser, Habib and Bezine, Hala and M'Sirdi, Nacer K and Alimi, Adel M and Naamane, Aziz},
+  journal={Procedia Engineering},
+  volume={41},
+  pages={923--931},
+  year={2012},
+  publisher={Elsevier}
+}
+@article{huang2015method,
+  title={Method of grasping control by computing internal and external impedances for two robot fingers, and its application to admittance control of a robot hand-arm system},
+  author={Huang, Jian and Sano, Yoshinori and Hori, Ryota and Hori, Takayuki and Yabuta, Tetsuro},
+  journal={International Journal of Advanced Robotic Systems},
+  volume={12},
+  number={8},
+  pages={115},
+  year={2015},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+@inproceedings{koyama2015grasping,
+  title={Grasping control based on time-to-contact method for a robot hand equipped with proximity sensors on fingertips},
+  author={Koyama, Keisuke and Suzuki, Yosuke and Ming, Aiguo and Shimojo, Makoto},
+  booktitle={Intelligent Robots and Systems (IROS), 2015 IEEE/RSJ International Conference on},
+  pages={504--510},
+  year={2015},
+  organization={IEEE}
+}
+@article{paoletti2017grasping,
+  title={Grasping with a soft glove: intrinsic impedance control in pneumatic actuators},
+  author={Paoletti, P and Jones, GW and Mahadevan, L},
+  journal={Journal of The Royal Society Interface},
+  volume={14},
+  number={128},
+  pages={20160867},
+  year={2017},
+  publisher={The Royal Society}
+}
+@article{chen2017nonlinear,
+  title={Nonlinear hybrid control design of three-joint dual finger robots},
+  author={Chen, Yung-Yue and Chang, Tzu-Ching and Chen, Yung Hsiang and Chen, Qi-Xian},
+  journal={International Journal of Advanced Robotic Systems},
+  volume={14},
+  number={1},
+  pages={1729881416687129},
+  year={2017},
+  publisher={SAGE Publications Sage UK: London, England}
+}
+
+@article{johansson2009coding,
+  title={Coding and use of tactile signals from the fingertips in object manipulation tasks},
+  author={Johansson, Roland S and Flanagan, J Randall},
+  journal={Nature Reviews Neuroscience},
+  volume={10},
+  number={5},
+  pages={345--359},
+  year={2009},
+  publisher={Nature Publishing Group}
+}
