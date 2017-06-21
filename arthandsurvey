@@ -1,0 +1,494 @@
+% tADRguide.tex
+% v2.0 released June 2015
+
+\documentclass{tADR2e}
+
+\usepackage{epstopdf}% To incorporate .eps illustrations using PDFLaTeX, etc.
+\usepackage{subfigure}% Support for small, `sub' figures and tables
+%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{rotating}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{enumitem}
+
+\begin{document}
+
+%\jvol{00} \jnum{00} \jyear{2015} \jmonth{June}
+
+\articletype{SURVEY}
+
+\title{From 3 fingers to 5 finger Dexterous hands}
+
+\author{
+\name{Daniel R. Ram\'{i}rez Rebollo\textsuperscript{a}$^{\ast}$\thanks{$^\ast$Corresponding author. Email: dan.ramirez@itesm.mx}
+, Pedro Ponce\textsuperscript{a} and Arturo Molina\textsuperscript{a}}
+\affil{\textsuperscript{a}Tecnologico de Monterrey,Calle del puente 222, Del. Tlalpan,Col. Ejidos de Huipulco ,Ciudad de M\'{e}xico;}
+\received{v2.0 released June 2015}
+}
+
+\maketitle
+
+\begin{abstract}
+This document presents a resume of several robotic hands from 1983 to 2016 its aim is to cover this rapidly evolving field of robotics and provide relevant information about the designs and current developments.
+The characteristics of the hands are enlisted and compared in terms of weight , grasping power/load capacity, degrees of actuation, degrees of freedom and finger configuration. Some prosthetic hands are presented in order to show their similarities with the robotic ones. A clear design tendency is seen while the gap between merely robotic hands and prosthetic limbs is getting tighter. 
+The final parts of the document expose the trends in design of robotic hands, whereas human inspired or not, the design tends to be compliant providing high number of degrees of freedom achieving high dexterity but decreasing the number of actuators, these characteristics are able to provide robust performance.Finally we suggest the standardisation on the development process of the robotic hands since most of them are meant to be used in household robots and human-robot interaction.
+\end{abstract}
+
+\begin{keywords}
+robotics; grasping and manipulation; hand; compliant robotics; under-actuated robotics; prosthetics
+\end{keywords}
+
+
+\section{Introduction}
+
+During the development of robotics it is easy to observe that one of the most important task that robots are meant to do is grasping. 
+This is due to the inherent desire of humans to transfer certain human capabilities to robots in order to serve as servants in different areas in the society. One example is; grasping objects in different scenarios such as: industry \cite{cutkosky1989grasp} \cite{falco2013dexterous}, domestic usages\cite{kemp2007challenges}, dangerous environments \cite{jongkind1993dextrous} \cite{bakari2007development}, subaquatic \cite{lane1997amadeus}\cite{davis2014vida} , among others \cite{rouleau2015design}.  
+
+The importance of grasping is only confirmed by the numerous studies related to graspig, \cite{lin2000modeling},\cite{santello1998gradual}, \cite{jeannerod1995grasping}, \cite{kamakura1980patterns}, \cite{napier1956prehensile}, \cite{jones2006human}, \cite{taylor1955anatomy}, \cite{iberall1987neural}, \cite{schlesinger1919mechanische}, \cite{bullock2011classifying}, \cite{santello1998postural}, \cite{mason2001hand}, \cite{schmidt2011surgical}, \cite{castiello2005neuroscience}, \cite{gibson1977theory}, \cite{cutkosky1989grasp}. 
+
+In \cite{jones2006human} a neurophysiological and behavioural perspective study of the hand's sensing capabilities is presented; in \cite{lin2000modeling} the constraints of the hand are studied in several pose configurations. For more biblyography ragarding the anatomical study of grasping \cite{schlesinger1919mechanische},\cite{schmidt2011surgical},\cite{taylor1955anatomy} are important lectures to follow. Specific studies about the grasping actions in its different stages such as before or during the "molding" process for grasping the object can be found in \cite{santello1998gradual}, \cite{jeannerod1995grasping} where it can be read that the grasping posture would not only be object dependant but task related, suggesting that an object can be grasped in many ways subjected to the use of the same object by the user.
+
+Some other articles as \cite{feix2009comprehensive},\cite{kamakura1980patterns} and \cite{napier1956prehensile}, studied grasping and created a classification or patterns related to grasping postures; in \cite{kamakura1980patterns} the grasping postures where photographed  for 98 objects from 5 directions, this photographs were compared and  finally fourteen patterns were found, in \cite{feix2009comprehensive} a survey is presented the authors used 33 different grasps and arranged them in a taxonomy table that includes, power grasps, precision grasps , intermediate grasps all these three with both thumb abducted or adducted. 
+In \cite{kamakura1980patterns} the article's main purpose is to classify prehensile movements of the hand analysed anatomically and in a functional manner, concluding that there were two basic patterns; precision grip and power grip, both which cover the whole range of prehensile movements analysed in the article. In\cite{castiello2005neuroscience}and \cite{iberall1987neural} the authors explain the action of grasping from both the neuroscience and neural perspective , in \cite{iberall1987neural} the authors developed a neural network to simulate the process of grapsing, in \cite{cutkosky1989grasp} the paper approaches to manufacturing tasks with hands based on certain grasps models previously mentioned in order to develop hands that will produce affordable grasping.
+
+In the other hand there have been a big number of approaches to build a hand or a limb that would let robots to grasp objects in a correct manner with ease. In fact there are positive results in this matter and still is an active research field, devices such as  grippers or anthropomorphic hands have proven their reliability; \cite{li1988task} \cite{murray1990grasping}\cite{romano2011human} \cite{dollar2007simple} \cite{namiki2004development}\cite{homberg2015haptic}\cite{deimel2016novel}, but on recent years the design of the grippers and hands are tending to go for under actuated mechanisms \cite{massa2002design} \cite{laliberte2002underactuation}\cite{ma2012dexterous} \cite{kamikawa2008underactuated}\cite{rea2011design}, meaning compliant configurations are present in the designs some of them using a single motor to control a whole hand. This designs let the control be easiest \cite{laliberte2002underactuation} \cite{birglen2007underactuated} sometimesthe difficulty of the design of the mechanism increases, but is a price worth to pay.
+
+This article presents information regarding robotic hands from 1983 to 2016 in order to discuss the design trends and improvements in this field. The reader can then relate the development of the robotic hand to the previously stated studies. During this article it can be seen that for a hand to be competent on completing grasping task it is not completely necessary to be fully actuated, the fully actuated hands present in the document are effective and impressive hands, but their complexity is high, compared to some of the other hands that use as few as one simple motor let us assume that simplicity in the design does not necessarily mean failure but efficiency in energy consumption, control and grasping synergies.
+
+\section{Hands Overview}
+\label{review}
+\subsection{Robotic Hands}
+Robotic hands and grippers have been used for years in industrial environments, hazardous or dangerous setups in order to mitigate risks for humans. Now a days the use of this technologies has reach office buildings, museums and households leading to a new area of design in the robotic hands. The presented hands are part of the history of the development of the robotic hands, back a few years and now a days, these are representative setups that might be points of reference for any researcher in the field.
+
+\subsubsection{iHY Robot Hand}
+The iHY Robot Hand \cite{odhner2014compliant} was designed by the Yale and Harvard University as part of the DARPA Autonomous Robotic Manipulation-Hardware program; in order to reproduce the abilities of a humans hand but with a simpler design. The aim of designing this hand was to produce a durable, inexpensive, moderately dexterous hand, and it was thin to be used by robots. The hand is a three fingered hand with two fingers and an opposite thumb, these two fingers are able to rotate 90°. Each finger has two joints, heavy duty elastic joints and metallic nails in order to produce grasping of variety of objects no matter the size and shapes. This is considered an under actuated hand since it has more joints than motors and it uses a technique called passive adaptation.
+In order to produce the fingers movement, each has inside tendons that will move the rubbery joints and fingers, the thumb is the only one that has two motors for each joint. It has several sensors embedded such as pressure sensors (MEMS tactile arrays were used for that purpose) and optic sensors for position or bending information.
+This Hand has is able to produce grasping for a wide variety of objects and it has proven its usefulness at DARPA events. This hand not only is a really well designed hand that uses passive adaptation to grasp objects but also its manufacture methods and materials let the hand be cheap and reliable at all circumstances , built with bendable plastics it has been claim that it is really difficult to broke and if done, easy to repair/replace.
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+\begin{table}[]
+\centering
+\caption{Some of the tasks that this hand reproduced}
+\label{my-label}
+\begin{tabular}{@{}l@{}}
+\toprule
+\textbf{Tasks}                                                      \\ \midrule
+Pick up a key and put it into a lock, then unlock and open the door \\
+Open a zipper on a backpack and remove the contents                 \\
+Pick up a pair of wire cutters and cut a wire                       \\
+Pick up and write with a whiteboard marker                          \\
+Grasp a drill and use it to drill a hole                            \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{Figure1iHyHand}
+    \caption{iHY robot Hand \cite{odhner2014compliant}}
+\end{figure}
+
+
+
+
+
+\subsubsection{Shadow EDC Hand}
+The Shadow Dexterous Hand is a 20 degree of freedom hand equipped with absolute position and force sensors, it also has 4 under- actuated movements for a total of 24 joints, actuators can be chosen between “smart motors” or pneumatic \emph{Air muscle}.  It has 129 embedded sensors that provide precise data to understand the environment in order to produce correct affordances it does not limits its sensing capabilities to force and position of the finger but it also senses the temperature and current of the motors that actuate the hand.  In order to send this data and produce an Open-close action in just .5 seconds the hand uses high bandwidth sensing with an \emph{EtherCAT} interface with a bandwidth ranging 100 HZ to 1 Khz and a 100 Mbps speed.
+It is possible to customise the hand for heavy duty applications, if desired air muscles are available or if needed the fingers can be configured with the Biotac tactile sensors\cite{shadow}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{shadowhand}
+    \caption{Shadow Hand \cite{shadow}
+    }
+\end{figure}
+
+
+\subsubsection{The Handroid}
+The handroid is a hand designed by ITK Company, it is designed as counterpart of hands that have motors for each joint on every finger, and the design is meant to be simple, reliable and light. It has five flexible fingers that bent with the action of tendons. This hand is built with lightweight, durable materials such as aircraft level aluminium. 
+ 
+It is able to be controlled with tele-operation, just as many hands, wearing a glove would let a person control the hand, and this particular hand is built with this configuration since one of the purposes is to deliver task in dangerous environments where it would be more desirable to use a robotic hand instead of a human hands such as in chemical environments, abrasive or any other that may harm a human hand. But even it is built lo endure in this hard conditions, the hand is versatile enough to be used as a medical prosthesis\cite{handroid1}\cite{handroid2}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{handroid}
+    \caption{Handroid \cite{handroid1}}
+\end{figure}
+
+
+
+
+
+
+\subsubsection{DLR Hand II}
+
+The DLR hand is built by a cooperation between the Harbin Institute of Technology and the German Aerospace Centre. The hand is provided with three equal fingers with four joints each one and a thumb. Each finger is provided with sensors in order to acquire force and positioning information. Each fingers is under actuated, since they have four joints but only three motors, the thumb is a special case due to an extra degree of freedom provided in order to produce fine manipulation and power grasping.
+In order to handle all the incoming data the hand uses a high speed real-time serial communication bus (25 Mbps) and FPGAs. It is controlled from a desktop computer by a user friendly interface, meanwhile all the sensor data can be displayed on the computer's screen\cite{butterfass2001dlr}\cite{butterfass2004design}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.35\textwidth]{Figure7DLRhandii}
+    \caption{DLR Hand II \cite{butterfass2001dlr}}
+\end{figure}
+
+
+\subsubsection{The PISA/IIT Soft Hand}
+
+This hand is one of the most radical under actuated robotics, it has 19 degrees of freedom but it is actuated with a single motor. This makes the hand very simple but effective to produce soft synergies, resulting in a soft hand posture that adapts to the object, making the hand able to grasp several objects regardless its shape and size.
+ 
+The design of this hand provides its particular, since the whole hand is built with soft material, but the articulations and ligaments was changed to produce a powerful and robust hand. Each finger is constructed with three phalanxes and a base, producing three joints. The hand opted for a non conventional joint construction using interphalangeal joints and  rolling cylinders combined with tendons that are connected to the motor's transmission in order to move the fingers\cite{catalano2014adaptive}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.25\textwidth]{Figure8pisahand}
+    \caption{The PISA/IIT Soft Hand \cite{catalano2014adaptive}}
+\end{figure}
+
+\subsubsection{UW's Hand}
+This hand is being developed at the University of Washington in Seattle, by Emanuell Todorov and Zhe Xu. Their aim is to produce a hand that would be almost identical to its human counterpart, not only in appearance but in functioning. To obtain their design, they 3D scanned the human hand bones, in order to begin with this as a base, they used a material called Spectra in order to give the hand flexibility and compliance in the joints. In order to move the hand they used 10 servomotors and cable routing to emulate the hand physiology, even the hand has a carpal tunnel just as the one in human hands.
+The hand has been tested in tele-operation mode with several objects such as , coins, tape, CD, keys, towels, plates, bowls among others producing positive results. They assure the positive results are due to the likeness of the developed hand to the human hand\cite{xu2016design}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{uwhand}
+    \caption{The University of Washington Hand\cite{xu2016design}}
+\end{figure}
+
+\subsubsection{AR10 Humanoid Hand}
+The AR10 hand is built by Active8 Robots, it was originally designed to be used with research robots but it can be used as an standalone unit. Regardless this fact the design of the hand is based on the average size of an adult male in order to give certain characteristics that according to their designers gives the hand certain benefits for research and simulation applications.
+The hand is built in order to provide customisation, such as the finger tips that are 3D printed, allowing the users to change the shape and characteristics of these elements and provide different capabilities and dexterity to the hand. The materials used are from plastic to aluminium, in order to be light and to provide strength and durability to the structure. 
+One of the main characteristics that the enterprise highlights is the low cost of the hand 3000 pounds \cite{ar10}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{ar10hand}
+    \caption{AR10Hand \cite{ar10}}
+\end{figure}
+
+\subsubsection{Meka Robotics H2 Compliant Hand}
+
+The Meka humanoid hand is a 12 DOF  self contained hand, meaning all the electronics and sensors are within the hand and there is no need for external units in order to the hand to operate properly. According to the data sheet the dimensions of the hand are human like in order to provide physical compliance. The hand has embedded sensors for haptic feedback.
+The hand is under actuated and provides 12 DOF with only 5 actuators. This configurations let the hand adapt its shape to objects in order to increase the contact area during grasping \cite{meka1}\cite{meka2}. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{mekahand}
+    \caption{Meka Robotics H2 Compliant Hand \cite{meka1}}
+\end{figure}
+
+\subsubsection{Robotiq 3 Finger Gripper}
+The gripper was designed by a group of Canadians from the Laval University in the robotics lab, it appears to be a evolution of the SARAH hand at the same university, which is a 10 DOF under actuated hand using only 2 actuators built in 1999.
+http://robot.gmc.ulaval.ca/en/research/theme304.html 
+SARAH Hand (under actuated robotic hand for the Canadarm)
+The first prototype of the gripper was presented at ICRA 2010 in Alaska, were it was shown how the gripper performed handling everyday objects such as chairs, fruits, vegetables, soda cans, etc.
+The final design of the gripper is intended for advanced manufacturing and robotic research, the manufacturer claims it can grasp any object of any shape and it has been designed to be compatible with all industrial robots in the market \cite{gripper1}\cite{gripper2}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{robotiqgripper}
+    \caption{3 Finger Gripper by Robotiq \cite{gripper1}}
+\end{figure}
+
+\subsubsection{SDM Compliant  Hand}
+
+The name of these hand stands from shape deposition manufacturing, this design is built with polymeric-based SDM in order to produce joints with elastomeric flexures, this technology gives the capacity to grasp objects despite uncertainties in the target location. The hand is built by two SDM compliant graspers, that are put together in order to produce a four finger under actuated hand. The original grasper was powered by a single motor, and one could possibly assure then the hand would be provided with two motors, contrary to these supposition the hand only has one single motor in order to power the eight joints. The hand was tested by Aaron M.Dollar and Robert D.Howe using objects such as telephones, wine bottles, compact discs, wireless drills, etc. The resulting hand let the authors demonstrate the simplicity of control and processing for this configuration of passively joints in order to produce robust grasping of objects \cite{dollar2010highly}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.25\textwidth]{sdmhand}
+    \caption{Shape Deposition Manufacturing (SDM) Hand \cite{dollar2010highly}}
+\end{figure}
+
+\subsubsection{Modular Soft Robotic Gripper}
+
+The Modular Soft Robotic Gripper was developed at the Massachusetts Institute of Technology. It is build with three soft fingers, the researchers paid special attention to the construction of this gripper in order to achieve a modular design, in fact the fabrication process used lost-wax process, 3D printing parts, molding rubber parts methods that are not commonly seen in the fabrication of robotic hands. The use of this methods is justified by the means of having a modular hand, easy fabrication process and the principal objective of obtaining a highly compliant hand that could perform flawlessly in uncertainty environments.
+
+The hand was easily attached to Baxter robot and used to grasp divers objects such as spoons, compact discs, boxes, cream containers , brushes and a diverse range of amorphous objects. As part of this study an algorithm was develop in order to recognise shapes with information of the hand's embedded sensors.\cite{homberg2015haptic}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Figure14Softgripper}
+\caption{Soft Robotic Gripper grasping a Compact Disc attached to the Baxter Robot \cite{homberg2015haptic}}
+\end{figure}
+
+\subsubsection{RBO Hand 2}
+
+The RBO Hand 2 is a highly compliant, under-actuated hand developed at the Berlin University of Technology. As simple as it seems, it is a fully capable and dexterous anthropomorphic hand. The dexterity of the hand is achieved with the use of Pneuflex actuators and an anthropomorphic design paying special attention to the thumb dexterity in order to comply with the Kapandji test \cite{kapandji1985clinical}. The hand is able to perform different grasping taxonomies, with objects such as pens, scissors, spheres and cylinders, proving its reliability and functionality with a simple design and low cost as well as short building time. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Figure15RBOhand}
+\caption{RBO Hand 2 , Front, back and side views of this highly underactuated hand \cite{deimel2016novel}}
+\end{figure}
+%%%%%%%%%%%%%%% end of hands review
+
+\subsection{Prosthetic Hands}
+Prosthetic Hands are devices meant to help humans to reinstate a lost capability, in this case the grasp of objects.
+These devices are meant to be used by humans and may require different design guidelines and security measures in order to comply with security and design standards such as the ISO 13482 since they might enter in the wearable robot classification. Regardless, the similarities with robotic hands are obvious and in some cases the added functionality such as, electromyographic sensors, pre-saved grasping postures, natural skin tone are the main differences between these two type of hands. It is important to notice that the prosthetic devices enlisted in this section are state of the art devices, and this do not represent the majority of the prosthetic upper limbs.
+
+\subsubsection{iLimb Ultra}
+This hand is a fully actuated hand, each finger has an actuator for each finger joint but still uses an individual stall out technology in order to produce a compliant grip of objects and accurately conform to the shape of the grasped item.
+ 
+It is able to individually control the strength of each finger and it has 14 pre-programmed and customisable grip patterns that can be accessed with the mobile app. Another controlling interface is using EMG signals acquired from the remaining limb of the user, meaning it can trigger certain behaviours user configurable in order to activate this with different muscle triggers. Therefore this mode delivers exceptional functionality and versatility upon the user’s ability to control its muscle triggers.
+The last interface is Bluetooth driven, it uses small \emph{grip chips}  in order to place them on desired objects to grasp, thus the hand can sense when one of this devices is close and then produce the desired corresponding grasp \cite{ilimb}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{ilimbultra}
+    \caption{iLimb Ultra Hand \cite{ilimb}}
+\end{figure}
+
+\subsubsection{Michelangelo Hand}
+The Michelangelo hand is a prosthetic hand  with Independent thumb drive for variety of positions, for example if rotated creates a flat open hand , ring and little finger have a passive behaviour following the rest of the fingers (thumb, index  and middle fingers)that are actively driven. The wrist can be locked every 15 degree increments. For customisation a colour matching glove can be purchased in order to produce a more natural look for the user comfort. 
+This hand combines natural appearance with low weight and still features complex grasping kinematics for each grasping posture and patterns \cite{michelangelo}.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{michelangelo}
+    \caption{Michelangelo Hand \cite{michelangelo}}
+\end{figure}
+
+
+\subsection{Hybrid Hands}
+The presented hand is an example of the almost non existent gap between robotic hands and prosthetic devices. Now a days robotic hands are able to be used as a prosthetic device as well in some cases providing high dexterity and more features such as Bluetooth connection with mobile devices, pre-configured grasps, EMG activation sequences, and others compared to old prosthetic devices. As it can be seen the gap is almost none between two different devices with the same objective (grasping). 
+
+\subsubsection{IH2 Azzurra}
+
+This hand is commercialised by Prensilia it has eleven degrees of freedom and five actuators, therefore is considered an under actuated robotic hand, it is a self-contained hand meaning all drivers and motors are within the palm of the hand and the fingers so no forearm space is used for any purposes, it is a human seize hand in order to be used as a prosthetic element with ten pre programed grasping positions.
+ 
+The fingertips of the hand are bio-inspired and they are built with different layers such as the epidermis and sub cutis layers in normal fingers, there is also an inner artificial bone and nails, these configuration produce a human-like finger mixing stiff materials with compliant materials as well in order to produce correct grasping, these materials also help in energy dissipation due to their visco-elastic behaviour\cite{cipriani2008mechanical}\cite{azzurra}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{azzurra}
+    \caption{Azzurra Hand\cite{azzurra}}
+\end{figure}
+
+
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{sidewaystable}[]
+\centering
+\caption{Hand comparison chart from 1983-2016}
+\label{my-label}
+\resizebox{25 cm}{!}{%
+\begin{tabular}{p{5cm} p{5cm}lllllllllll}\toprule
+Name                          & Sensors                                                                                                                          & Fingers & Transmission                    & Research Institute                            & Year & DOF     & DOA     & Actuators                                            & Weight {[}Kg{]} & Load {[}Kg{]} & Load {[}N\mm{]} \\ \colrule
+Stanford/JPL Hand   \cite{johnson1987kinematic} \cite{salisbury1982articulated}          & Tactile Sensors, Tension tendons sensors                                                                                         & 3       & Tendons                         & Stanford University                           & 1983 & 9       & 9       & Electrical (DC)                          & 1.1             &               & 110.8           \\
+Utah/MIT \cite{jacobsen1984utah}\cite{jacobsen1986design}                      & Hall effect sensors, Tendon tension sensors, tactile distributed sensors                                                         & 4       & Tendons                         & Utah University                               & 1985 & 16      & 16      & Pneumatic Cylinders                              & 9               & 9             &                 \\
+Belgrade/USC Hand \cite{bekey1990control}             & Potentiometers as positions sensors, Force resistors                                                                             & 5       &                                 & Belgrade University                           & 1988 & 15      & 4       & Electrical Motors                        &                 & 2.26          &                 \\
+BarrettHand\cite{townsend2000barretthand}\cite{barretHand2}                   & Optical Encoders, Tactile sensors                                                                                                & 3       & Tendons, worm gears             & Barret Technology Inc.                        & 1988 & 8       & 4       & Electrical Brushless motors                    & 1.2             & 6             &                 \\
+DLR Hand I     \cite{butterfass1998dlr}               & 28 Sensors on each finger, hall sensors, optical position sensor, torque sensor, force sensor, tactile sensors and stereo camera & 4       & Tendons                         & DLR- German Aerospace Center                  & 1997 & 16      & 12      & Electrical                                     &                 &               &                 \\
+Dist Hand \cite{caffaz1998design}                    & Rotation sensors in each joint                                                                                                   & 5       & Tendons                         & Génova University                             & 1998 & 16      & 16      & Electrical                                      & 1               &               & 1.96            \\
+Robonaut Hand \cite{lovchik1999robonaut}              & 42 sensors plus tactile sensors                                                                                                  & 5       & Tendons                         & NASA Johnson Space Center                     & 1999 & 19      & 14      & Electrical Brushless Motors                  &                 & 9             &                 \\
+Gifu Hand \cite{kawasaki2004toward}                    & Magnetic encoder in the motors shaft and tactile distributed sensor                                                              & 5       & Gears , Links                   & Gifu University                               & 1999 & 20      & 16      & DC Micromotors                                  & 1.4             & 1.83          &                 \\
+Robotiq 3 Finger Gripper\cite{gripper1} \cite{gripper2}     & current sensor, position sensor , grip sensor                                                                                    & 3       & gears and links                 & Laval University                              & 1999 & 10      & 4       & DC Motors                         & 2.3             & 10            &                 \\
+Blackfingers  \cite{folgheraiter2000blackfingers}  \cite{martell2007robotic}              & Position and force sensors directly on the actuator                                                                              & 5       & Tendons                         & Politecnico de Milano                         & 2000 & 22      & 36      & Mckibben Actuators                            &                 &               &                 \\
+Tuat/Karlsruhe Hand \cite{fukaya2000design}          &                                                                                                                                  & 5       & Tendons                         & Tokyo and Karlsruhe Universities              & 2000 & 24      & 1       & Electrical                             & 0.49            &               &                 \\
+Ultralight Hand     \cite{schulz2001new}         &                                                                                                                                  & 5       & NONE                            & Research Center of Karlsruhe                  & 2000 & 18      & 13      & Flexible Fluidic actuators               & 0.2             & 1.22          &                 \\
+Variable Force Hand \cite{VFH}          &                                                                                                                                  & 5       & Tendons                         & Hokkaido University                           & 2000 & 10      & 5       &                                      &                 &               &                 \\
+DLR Hand II \cite{butterfass2001dlr}                  & Torque sensors in each joint                                                                                                     & 4       & Tendons                         & DLR- German Aerospace Center                  & 2001 & 17      & 13      & Electrical                                    & 2.2             & 3.059         &                 \\
+RTR Hand I   \cite{massa2002design}                 & Hall effect sensors, strain gages as force sensors                                                                               & 3       & Screws                          & Centro INAIL RTR, Scuola Superiore Santa Anna & 2001 & 9       & 3       & DC Micromotors                                  &                 &               &                 \\
+Dexterous Robot  \cite{tai2007design}   &      & 4       & Tendons                         & Maryland University                           & 2001 & 12      &         &                                          &                 &               &                 \\
+Shadow EDC Hand   \cite{shadow}            & Hall effect sensors, Tactile sensors                                                                                             & 5       & Tendons                         & Robot Shadow Company Ltd.                     & 2002 & 23      & 23      & Pneumatic muscles                      & 4               &               &                 \\
+Thinh Hand                    & Bend Sensors, Camera for visual control of the thumb pronation angle                                                             & 4       & Tendons                         & Florida University                            & 2002 & 14      & 6       & Electrical                                 &                 &               &                 \\
+High Speed Multifingered Hand \cite{namiki2004development} & Strain gages, Camera for image processing                                                                                        & 3       & Miniharmonic drive, bevel gears & Tokyo and Hiroshima Universities              & 2003 & 10      & 10      & Electrical                   & 0.8             & 2.85          &                 \\
+SMA Hand           \cite{delaurentis2000development}           & Planed to have Position Sensors, Force Sensors and Touch Sensors                                                                 & 4       & Shape Memory Alloy Wires        & State University of New Jersey                & 2004 & 14      &         & Electrical                                        & 1.3             & 3.6           &                 \\
+AHMAR Hand   \cite{kargov2005development}                 & Angle sensors, Force Sensors and Pressure Sensors                                                                                & 5       & Flexible Fluidic Actuators      & University of Karlsruhe                       & 2005 & 8 to 18 & 8 to 16 & Micro Gear Pump                                 & 0.49            & 11.21         &                 \\
+UB Hand III v1   \cite{lotti2005development}             & Strain=gauge based sensors, position sensors, tendon force sensors                                                               & 5       & Elastic Hinges with Tendons     & University of Bologna                         & 2005 & 20      & 16      & DC Brushed Motors                           &                 &               &                 \\
+RL1 Hand  \cite{cabas2005design} \cite{cabas2006optimized}                   & Tendon Tension thru mathematical approximation                                                                                   & 3       & Tendons                         & Universidad Carlos III de Madrid              & 2006 & 8       & 1       & DC Motors                                     & 0.25            & 2             &                 \\
+AAA Hand    \cite{zollo2007biomechatronic}                  & External optotrank (Infrared optical device)                                                                                     & 3       & Tendons                         & Scuola Superiore Santa Anna                   & 2007 & 10      & 4       & DC Motors                                        & 0.25            & 3.56          &                 \\
+FRH-4 Hand   \cite{gaiser2008new}                 & Position Sensors, Tactile Sensors                                                                                                & 5       & Flexible Fluidic Actuators      & Research Center Karlsruhe                     & 2008 & 11      & 12      & Gear Pump                                      & 0.216           & 11.21         &                 \\
+IH2 Azzurra     \cite{azzurra}              & Tendon Force Sensors, 2 Axis fingertip force sensor                                                                              & 5       & Tendons                         & Prensilia                                     & 2008 & 11      & 5       & Electric Motors                                & 0.6             & 10.2          &                 \\
+UB Hand III v2   \cite{berselli2009integrated}             & Optical angular sensors, Optical Tensor Sensors, Strain gauge tension sensors                                                     & 5       & Tendons                         & Bologna University                            & 2009 & 20      &         & Mckibben Artificial Muscles                 &                 &               &                 \\
+TH-3R Hand   \cite{xiong2009super}                 &                                                                                                                                  & 5       & Gears , Racks                   & Tsinghua University                           & 2009 & 15      & 4       & Motors                                          &                 &               &                 \\
+Columbia Hand    \cite{wang2011highly}             & Position Sensors, Tactile Sensors                                                                                                & 3       & Tendons                         & Columbia University                           & 2011 & 9       & 2       & Motors                                       &                 &               &                 \\
+The Handroid \cite{handroid1}\cite{handroid2}                 &                                                                                                                                  & 5       & Tendons                         & ITK Company                                   & 2011 & 16      & 5       & DC Motors                                    & 0.725           &               &                 \\
+KYTECH Hand  \cite{lee2016kitech}                 & Position Sensor,                                                                                                                 & 4       & Gears                           & Korea Institute of Industrial Technology      & 2012 & 16      & 16      & DC Motors                                      & 0.9             & 1.5           &                 \\
+The PISA/IIT Soft Hand \cite{grioli2012adaptive}          \cite{catalano2014adaptive}       &                                                                                                                                  & 5       & Tendons, Rolling cylinders      & University of Pisa                            & 2012 & 18      & 1       & Electric Motor                      &                 &               &                 \\
+TDM Hand        \cite{ozawa2014design}              & No sensors, force approximation using Ozawa and Moriya technique                                                                 & 3       & Tendons                         & Ritsumeikan University                        & 2013 & 12      & 12      & DC Motors                                         &                 & 5.1           &                 \\
+iHY Robot Hand         \cite{odhner2014compliant}       & Pressure sensors, Optic sensors                                                                                                  & 3       & Tendons                         & Yale and Harvard University                   & 2014 & 9       & 5       & DC Motors                                   &                 & 22            &                 \\
+Soft Robotic Hand \cite{homberg2015haptic}            & Resistive Bend sensors                                                                                                           & 3       & Pneumatic tubing                & Massachusetts Institute of Technology         & 2015 &         &         & Pneumatic piston                         &                 &               &                 \\
+HALS          \cite{yoshida2016development}                &                                                                                                                                  & 5       & Tendon                          & Yokohama National University                  & 2016 & 9       & 5       & DC Motor                                              & 1.2             & 3.059         &                 \\
+RBO Hand 2      \cite{deimel2016novel}              &                                                                                                                                  & 5       & Pneuflex                        & Berlin University of Technology               & 2016 & 5       & 7       & Pneumatic                                       & 0.178           & 0.5           &                 \\
+UW’s Hand             \cite{xu2016design}       & Joint and Tactile Sensors                                                                                                        & 5       & Tendons                         & University of Washington                      & 2016 &         & 10      & Servo Motors                                    & 0.942           &               &     \\ \botrule           
+\end{tabular}%\botrule 
+}
+\end{sidewaystable}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hands Review}
+Previous section showed some important designs in robotic hands and prosthetic hands as well. The purpose of showing some prosthetic devices is to expose the fact that the robotic hands are closing the gap between the two designs, by this we mean that a prosthetic device is willing to be used by a human user and a robotic hand is meant to be embedded in a robot, even they have different purposes the designs coincide in many aspects and this proves that the robotic hands for robots tend to have a more human like appearance and performance.
+
+This section provides a comparison between 38 Hands from 1983 to 2016 in order to appreciate its similarities and differences in aspects such as; degrees of freedom (DOF), degrees of actuation (DOA), weight, force/load capacity, sensors, type of actuation, transmission, numbers of fingers, etc. The whole information is covered in Table 2, where information regarding each hand can be found in an ordered manner and from where graphs from this section were obtained in order to provide quantitative comparison in certain areas of interest, providing a view of the trends and the tendencies in designs the advancement of grasping technologies. 
+
+This sections shows comparison graphs related to finger configuration, DOF vs DOA and Hand Force/load capacity, aspects that we firmly believe that researchers in this are will found interesting and that directly affect the grasping capabilities, dexterity and possible applications of the hands for further research.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=.9\textwidth]{fingerconfiguration}
+    \caption{Distribution of finger configuration on the revised hands}
+\end{figure}
+Figure 16 shows finger configuration distribution on the reviewed robotic hands, it is easy to see that the five fingers configuration prevails over the three fingers or four fingers setups. We assume this trend to the fact that the robots are moving to more dynamic and human populated scenarios where human friendly robots need to handle objects much likely like humans. 
+Thus object manipulation tries to emulate the human action of grasping including its compliant nature, the anthropomorphic shape, and the dynamic adaptation to the object in order to provide better grasping postures. There is several studies that have been using hands with different finger configurations with positive results in different applications\cite{rhee2004door}, \cite{farry1996myoelectric}, \cite{bitzer2006learning}, \cite{kargov2005development},\cite{townsend2000barretthand}, \cite{hochberg2012reach}
+Grasping has been extensively studied not only by roboticist around the world but also by other fields in aims of understanding this important action . We believe also that the five finger configuration has been increasing in applications is due to the high configurability and different grasping synergies that a hand with such characteristics can provide for different objects and situations. Precisely \cite{cutkosky1989grasp} and \cite{feix2009comprehensive} talk about these postures and classify them in order to have a coherent order and groups. The dexterity of this 5 finger configuration cannot be denied, but confirmed. Regardless a problem arises every time that the anthropomorphic shape and function is emulated, that is the actuation of all its 17 degrees of freedom. Actuating this complex system is a task that is not easy and for sure not straight forward.
+There have been successful attempts for producing fully actuated anthropomorphic hands, but it is obvious that the controllability becomes more difficult and the weight increases as the number of actuators rises. Therefore a great number of this hands have a under-actuated nature, this characteristic lead to a simpler control and less number of actuators in fact there are studies that analyse this designs and their reliability \cite{gabiccini2013grasp}, \cite{prattichizzo2012manipulability} . Next image, shows a comparison between the several hands presented in this document and the difference in the degrees of freedom (DOF) and their degrees of actuation (DOA).
+
+\subsection{Degrees of freedom vs Degrees of actuation}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{doadofcomparison}
+    \caption{Comparison between DOF and DOA for the reviewed Hands from 1931 to 2016}
+\end{figure}
+
+From the previous graph, the great majority of the reviewed hands from 1983 to 2016 are under-actuated hands, meaning there is much more hands with more degrees of freedom than actuators. Still there is a group that maintains its fully actuated nature and it is not a despicable number (5 of 37 hands) suggesting that fully actuated hands still are under research and development. We believe this is due to new actuator generations and technologies that can act as compliant actuators in certain conditions, giving this compliant characteristic to the hand without under-actuated configurations. 
+There is a visible trend of under-actuated robotic hands, these devices have proved that can grasp diverse objects with ease just as fully actuated hands. The importance resides in the fact that they occupy less actuators and energy, therefore their weight and cost are less and the configuration leads to a simpler control strategy. 
+In the other hand, under-actuated robotic hands have opened new research areas such as tendon analysis \cite{palli2012modeling}, unconventional actuator systems \cite{palli2013modeling} , sensors \cite{palli2011force} and new materials to provide standardised and reliable tendon networks \cite{palli2012innovative}. Some of the works that where reviewed used nylon fishing line, but there is a need for standardisation and characterisation of these materials to help researchers chose the correct material for their applications.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9 \textwidth]{comparisonforceandweight}
+    \caption{Different load/force capacities on the reviewed hands.}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The last aspect that we consider in this document was the capacity of the hands in terms of load or force. This is an important feature for a hand, since it might grasp diverse objects and therefore its capacity for lifting loads might affect its performance in certain applications. We discovered that this characteristic is one of the less present in the articles reviewed , as it can be seen in Figure 18 the lack of this field is more visible than the previous compared characteristics. 
+There is the need for this feature to be standardised as well in terms of the units in which it is measured and in how  it is measured as well. Some of the present hands measure the force at the fingertips without any further information about the position of the finger , others measure it with a grasping posture. The importance of standardisation and correct measurement is due to the utilisation of the devices in applications where humans are involved and human-robot interaction is desired as part of the objectives since the robots have the role of mobile servant robot.
+
+
+\section{Discussion}
+
+The grasping problem in robotics is one of the most important paradigms in this research area, the importance of this topic extends from the study of the human hand, to the creation of specific algorithms that intend to solve the grasping task. The advancement of this field is wide and vast and this document presents a group of grasping robotic hands from 1983 to late years. It can be seen form the collected data that there are certain trends in the designs of the hands that have arise in late years.
+
+
+
+What it can be seen in the designs of the presented hands is that compliant configurations let the robot handle uncertainty from the very beginning of reaching and grasping physically the object not during control process. The \emph{softness}(compliance) of the hand is an advantage for the adaptability and dexterity, which increases compared to a stiff non compliant hand designs are more coherent with can be found in studies such as \cite{santello1998postural} and \cite{jeannerod1995grasping} where authors talk about certain molding process. As well as articles where it has been demonstrated that the joint angles of the hand does not vary independently on each finger since the primary motor cortex (MI) is not able to isolate finger movements, instead an overlapping organisation has been found for finger movement \cite{mason2001hand}, suggesting that the control strategy in the MI is not as in \cite{lemon1999neural} where muscles and joints are controlled individually in order to generate the needed forces for grasping.  Instead a base posture is used and little refinements in finger and thumb positions lead to unique hand shapes, creating the grasping forces.
+
+Under-actuated means having more degrees of freedom than actual degrees of actuation, therefore just two of the reviewed hands seem to be fully actuated but the rest are under actuated and compliant. This is not a coincidence, the human hand is a highly evolved mechanism with several degrees of freedom \cite{kapandij1982physiology}, From table number two we can see that five fingered hands are more present over the years, early in the years the robotic hands where less likely to be five fingered and when the five fingered designs where achieved they were fully actuated and complicated, over the years and in recent research robotic hands have not stop to have three fingered configuration either but the anthropomorphically hands tend to be under-actuated and compliant rather than fully or over-actuated and stiff in their links. 
+
+It seems that the better study and understanding of the human hand leads to better developments in robotic hands as well, emulating its physiology with the use of tendons and embedding characteristics such as compliance and under actuation, without any lost of capabilities, conversely it seems they gain dexterity when manipulating objects in unknown conditions and without the use of visual inpu as suggested in certain algorithms \cite{borst1999fast}, \cite{calli2011grasping},\cite{kehoe2013cloud}, \cite{namiki1996optimal}, \cite{nguyen1987constructing}, \cite{saxena2008robotic} , rather some hands are able to recognise what kind of objects are they grasping \cite{homberg2015haptic}.
+
+The control for these type of hands is easier since the number of actuators is less compared to fully actuation, besides the reduced number of actuators let most of the hands be fully integrated in their palms and of course reduce the use of energy. These are just a few advantages that can be resumed but the most interesting advantages are the ease at grasping actions as reported in the cited articles.
+
+It is not a surprise that more compliant hands and designs in robotics are being developed around the world as far as their advantages continue to be present and useful for all robotics areas.
+
+\subsection{Modelling and Control}
+The development of diverse dexterous hand produces an active research in order to control the interaction between these devices and the external environment while grasping. This research are is as diverse as the approaches for developing the robotic hands, there are several phenomena which is taken or not in consideration during the modelling and control of the grasping action. 
+
+Grasping actions are viewed as parametric operations that may involve or not, friction, slippage, object density,object position, object geometry, contact conditions, hand architecture(soft or rigid fingers) among others. Important bibliography about this matter can be found in \cite{brost1988automatic}\cite{cutkosky1989computing}\cite{bekey1993knowledge}\cite{hartl1995dextrous}\cite{huang2015method}.
+
+In \cite{brost1988automatic} the grasping action is modeled with the need of the position of the object, the density and object geometry in order to produce a grasping posture, it also uses physics of friction of the 2 finger gripper in order to correctly grasp an object, in \cite{li1988task} the author uses elementary differential geometry to describe the object and implements the use of three quality measures to evaluate the grasping task including a task oriented evaluation.
+Cutkosky in \cite{cutkosky1989computing} also talks about grasp geometry, contact conditions as well as mechanical properties of the fingers in order to reduce the risk of unstable grasps. Cutkosky used a planar robot model for each finger in order to develop this research. In \cite{houshangi1990control} the author developed an adaptive self tuning controller  for a Puma 600 robot with visual feedback to add the capability of self-adapting and deal with unexpected events while grasping. In the same approach in developing a grasping control that could deal with less structured environments, George Bekey \cite{bekey1993knowledge} developed a knowledge based controller , with information about the robot hand, object geometry, task and human grasping characteristics. One of the most interesting aspects is the verbal description of the task in order to achieve high-level control  and the use of human heuristics in the control for a multi-fingered hand.
+Some of the most complex analysis take in consideration the rolling and slipping properties during grasping, as well as static forces, point of contact, angle of contact such as Harald in  \cite{hartl1995dextrous}.
+
+In \cite{kragic2001real} , the authors used a closed-loop control with real time vision and on-line model-based simulation in order to develop a semi automated controller This approach was in certain manner limited since it needed a CAD model
+of the object in order to produce an affordable grasp. In \cite{miller2003automatic} the authors used shape primitives such as spheres, cylinders, cones and boxes in order to simplify the problem of grasping by selecting an appropriate predefined prehensile posture as it has been discovered that the humans grasp objects. This approach produced finger tip grasps that were good for manipulating objects but weren't the best grasps Pollard proposed a controller with passive and active components in order to uphold compliant yet controllable motion of the fingers producing a less dynamic dependent system.
+In \cite{chen2006grasping} the authors used the possibility theory in conjunction with a partially linearised neural network to control the grasping  taking in consideration the force and slipping of the object computing the possibility of the friction coefficient and/or object damage.
+Yoshikawa in  \cite{yoshikawa2010multifingered} introduced the force/form closures and active/passive closures which represents a different manner on how grasping was modeled in some of the previous stated articles. He enlisted the basic requirements to grasp objects firmly in order to eliminate slippage or any possibility of breaking contact.
+One of the most disruptive approaches is the one found in \cite{romano2011human} where the author took inspiration on the human mechanoreceptors in the glabrous in the human skin in order to develop a system which will dynamically change the exerted force according to the detected slipping of the object. This is due to the statement \emph{"Humans typically apply a grip force that is only 10-40\% more than the minimum amount needed to avoid slip"}
+that can be found in \cite{johansson2009coding}.
+Some other approaches use traditional methods for the modelling and control using Lagrange formulation and PD control \cite{boughdiri2012dynamic}, impedance control \cite{huang2015method},\cite{paoletti2017grasping},  dynamic decreasing of the velocity at contact \cite{koyama2015grasping}, feedback linearisation and non linear H2 control \cite{chen2017nonlinear}.
+
+    In general terms the grasping problem in robotics is broad and vast, there is a tremendous quantity of hands as well as control algorithms or models. Every approach is different and it is impossible to categorise them all. Despite this, it can be observed from \cite{yoshikawa2010multifingered},\cite{bicchi2000robotic} that important aspects to consider are:
+\begin{itemize}
+    \item{Closure Properties of the Grasp}
+    \begin{itemize}
+        \item{Soft Fingers}
+        \item{Rigid Fingers}
+    \end{itemize}
+    \item{Force Analysis}
+    \begin{itemize}
+        \item{Internal Forces}
+        \item{Squeeze Force}
+        \item{Equilibrating Forces}
+        \item{Force Distribution}
+    \end{itemize}
+    \item{Contact Models}
+    \begin{itemize}
+        \item{Kinematics of contact}
+        \item{Contact Compliance}
+    \end{itemize}
+    \item{Contact compliance}
+    \item{Dynamics of the Hand}
+    \item{Implemented Control}
+    \begin{itemize}
+        \item{Impedance Control}
+        \item{Hybrid Position/Force Control}
+    \end{itemize}
+\end{itemize}
+
+
+\subsection{Applications}
+
+Robotic hands, have found a wide variety of applications that have been previously mentioned in the introduction section; from factories, households, underwater , volcanoes, among others.
+During the development of this research, it was possible to see that certain designs are more likely to be used in specific applications compared to other type of robotic hands.
+
+\emph{Three fingered robotic hands}, also called grippers, are used in industrial environments when pick and place operations take place, in these setups, the grasped objects have simple geometries and it is needed to handle thousands of pieces per day. Commonly they are used with delta robots and articulated robots. Another common characteristic is their rigid nature, with any type of compliant configuration in their mechanical design. This is due to the nonexistent uncertainty , visual feedback and high controlled environments where these robots are on duty \cite{lundstrom1974industrial}.
+
+\emph{Three fingered compliant robotic hands},as for this emerging configuration, new applications have appear, these hands have proven to have better dexterity than the previous mentioned and are able to grasp objects with high complex geometry as has been showed in \cite{homberg2015haptic}. The importance of this new designs is high since they provide dexterous grasping with less actuators and energy. Important facts in mobile servant robots. 
+
+\emph{Anthropomorphic Hands} These hands are human-like hands, most of them take in consideration studies related to the human body in order to inspire their designs and commit to the objective of a anthropomorphic robotic hand. This might be since the human hand is a common reference and comparison point to the robotic developments, but early designs of these hands where bulky, fully actuated and very complex. New developments in the field have lead to a better understanding of the human hand physiology and a better emulation of it. The new robotic hands with this configuration are under-actuated and compliant, these characteristics can be also found in the human hand as stated early on this document. These hands have proven to be as reliable \cite{deimel2016novel}  as their fully actuated counterparts with less use of energy, actuators and simpler control topologies. The use of these hands is much more common in human-robot interaction applications such as servant robots, prosthetic devices \cite{iberall1994development}, assistive robotics than in dangerous environments.
+
+\subsection{Challenges}
+
+
+The robotic hands presented vary from three to five fingers, regardless this difference in their design most of them share an under actuated / compliant configuration. This two characteristics are trends that provide new research opportunities and innovation in areas ,the following are key challenges where advances are needed :
+
+\begin{itemize}[noitemsep]
+\item New materials
+\item Compliant configurations (tendons or actuators)
+\item New algorithms
+\item Building processes
+\end{itemize}
+
+The grasping problem in robotics is a promising area of research since still there can be found quite important improvements as have been shown in this document. Unfortunately during the development of this research we found some areas of opportunity that we believe need special attention for a better development of the topic thus better results in the pursue of the correct grasping in robotic hands.
+Topics that need further development are:
+
+\begin{itemize}[noitemsep]
+\item Lack of the standardisation for evaluating correct grasping.  
+\item Measure units for maximum load capacity of the handis not standardised.
+\item Standardisation of the measurement protocol for maximum load/capacity posture since it is different on each hand and the measure placement takes place in fingertips or whole hand.
+\end{itemize}
+
+It would be necessary to comply with ISO or IEC guidelines, in this manner the research centres, universities and companies , loss less time and use fewer resources in the development of the devices, guarantying the reliability, safety and quality to work as desired. These standardisation is of great importance not only for commercial purposes but also for the advancement and classification of the new developed devices. As previously stated, there are merely prosthetic devices, merely robotic or hands that can act like the two of them. Therefore , the use of the ISO such as ISO 13482 might help in the classification and design guidelines for those devices in order to commit to certain safety standards. ISO 13482 mentions different regulations for mobile robots with grasping capabilities than for wearable robots, this specific topic has not been mentioned in non of the above reviewed robotic hands, it might be important to delimit the application in order to comply with one or other standards or in any case with both, if the robotic device is capable of being used as one in the section 2.3, device that can be used in a mobile servant robot and as a prosthetic device.
+
+
+
+\subsection{Future Trends}
+Future trends in robotic hands will depend on the final user needs and desires, as well as regulatory measures in this area, they might need to comply with important factors such as affordability, reliability, effectiveness, safety standards among others. Important issues regarding this specific area of development are enlisted as follows:
+
+\begin{itemize}[noitemsep]
+\item Use of lightweight, low cost, compact and high precision actuator arrays. This is due to the high dexterity needed in parallel with the aim of self contain robotic hands, and make them as self-dependent as possible.
+\item Security and comfort are important issues to consider. Research centres and companies might need to look up in the ISO or IEC standards in order to comply with safety conditions as well as working standards.
+\item Soft and compliant materials will prevail when the application is related to servant robots and the grasping is executed in human populated environments.
+
+\end{itemize}
+
+
+
+\section{Conclusion}
+
+The present work presents a review of robotic hands, exposing important information regarding its design and capabilities. The paper shows three different type of hands, merely robotic hands, prosthetic devices and hybrid devices, this due to the fact hat the gap between robotic hands and prosthetic devices has begun t shrink and both have great similarities and shared capabilities. Another aim of the classification presented is to bring out potential issues in the development of his devices in order to improve in certain aspects when needed. This will allow researchers and developers to focus their efforts in advancing their new works in these opportunity areas.
+As a whole, the documents pretends to help academicians, researchers and developers to have an inclusive state-of-the-art documentation in the domain in order to realign and focus efforts in the development of these technologies keeping in mind the presented issues of standardisation and safety in the rapidly evolving topic of grasping robotics.
+
+
+
+
+
+
+\section*{Acknowledgements}
+The author thanks the CONACyt and the Tecnológico de Monterrey for the scholarship during his PhD studies. Also wants to thank his advisors Pedro Ponce and Arturo Molina for the support and guidance.
+
+
+\bibliographystyle{tADR}
+\bibliography{tADRguide}
+
+
+\end{document}
